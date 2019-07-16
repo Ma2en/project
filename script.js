@@ -21,16 +21,6 @@ function manualchang(n) {
   topbutton.addEventListener("click",backtoup);
 
 
-  function backtoup(){
-    scroll(0,0)
-    
-  }
-  window.onscroll = function() {transbar()};
-
-  function transbar(){
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-        document.getElementsByClassName("navbar").addClass("navigator");
-    }else{
-        document.getElementsByClassName("navbar").removeClass("navigator");
-    }
-  }
+function backtoup(){
+    scroll(0,1500)
+}

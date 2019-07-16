@@ -4,27 +4,27 @@ body, html {
     padding: 0;
     margin: 0;
 }
-.navbar{
+#navbar{
   position: fixed;
   width: 100%;
+  height: 4%;
+  padding-bottom: 8px;
   display: block;
   transition: top 0.3s;
-  background-color: transparent;
+  background-color:transparent;
 }
-.navigator{
-  background-color: black;
-}
-.navbar a{
+#navbar a{
   float: right;
-  margin: 10 20px;
+  margin: 10px 20px;
+  margin-bottom: 5px;
   display: block;
   color: #be1414f1;
    text-align: center;
    padding: 15px;
-   text-decoration: none;
+   text-decoration:underline;
    font-size: 17px;
 }
-.navbar a:hover {
+#navbar a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -37,12 +37,27 @@ body, html {
   }
   .main-divs{
       height: 100%;
-      
-      
+      /* this style for rmove the space between divs*/
+      display: grid;
   }
+  .mid-sec{
+    background-color: aqua;
+     clear: both;
+  }
+
+#img-div{
+  background-color: whitesmoke;
+  width: 32%;
+  height: 100%;
+  text-align: center;
+  margin-left: 20px;
+  display: inline;
+}
  .footer{
-      margin-left: 3.3%;
+      
       background-color: aqua;
+      height: 30%;
+      margin: 2px 0 ;
   }
   .col-1{
       float: left;
