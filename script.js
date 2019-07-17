@@ -20,7 +20,6 @@ function manualchang(n) {
 
   topbutton.addEventListener("click",backtoup);
 
-
 function backtoup(){
-    scroll(0,1500)
+    scroll(0,0)
 }
