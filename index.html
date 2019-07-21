@@ -26,41 +26,20 @@
                     <div class="prev-div"><a class="prev" onclick="manualchang(-1)">&#10094;</a></div>
                     <div class="next-div"><a class="next" onclick="manualchang(1)">&#10095;</a></div>
             </div><!--end slider-divs -->
-            <section class="main-divs mid-sec">
-                <div id="img-div" class="col">
-                    <img src="images/img1.jpg">
-                    <h4>Cars front the sea</h4>
-                    <p>
-                       <strong> Saving Money.</strong><br>
-                        "I have saved 70 pence today" David said to his wife, excited and breathing
-                         deeply as he arrived home. "I followed the bus back and earned 70 pence for
-                          us.""You stupid fool, you should have fokkowed a taxil! 
-                        Don't you realise that you could have earned tow pounds instead?"
-                    </p>
+            <main style="text-align: center" class="grid-item main">
+                <div style="text-align: center" class="items">
+                    <div class="item item1"></div>
+                    <div class="item item2"></div>
+                    <div class="item item3"></div>
+                    <div class="item item4"></div>
+                    <div class="item item5"></div>
+                    <div class="item item6"></div>
+                    <div class="item item7"></div>
+                    <div class="item item8"></div>
+                    <div class="item item9"></div>
+                    <div class="item item10"></div>
                 </div>
-                <div id="img-div" class="col">
-                    <img src="images/img3.jpg" >
-                    <h4>Cars front the sea</h4>
-                    <p>
-                        <strong> Saving Money.</strong><br>
-                         "I have saved 70 pence today" David said to his wife, excited and breathing
-                          deeply as he arrived home. "I followed the bus back and earned 70 pence for
-                           us.""You stupid fool, you should have fokkowed a taxil! 
-                         Don't you realise that you could have earned tow pounds instead?"
-                     </p>
-                </div>
-                <div id="img-div" class="col">
-                    <img src="images/img2.jpg" >
-                    <h4>Cars front the sea</h4>
-                    <p>
-                        <strong> Saving Money.</strong><br>
-                         "I have saved 70 pence today" David said to his wife, excited and breathing
-                          deeply as he arrived home. "I followed the bus back and earned 70 pence for
-                           us.""You stupid fool, you should have fokkowed a taxil! 
-                         Don't you realise that you could have earned tow pounds instead?"
-                     </p>
-                </div>
-            </section><!--end img-div-->
+            </main>
             <section class="main-divs" style="background-color: darkgray"><h1>I am the third div</h1></section>
         </div><!--end main-divs-->
         <div class="footer">
@@ -101,6 +80,34 @@
                     document.getElementById("navbar").style.backgroundColor="transparent";
               }
             }
+
+            const slider = document.querySelector('.items');
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+            });
+            slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+            });
+            slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+            });
+            slider.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 3; //scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+            console.log(walk);
+            });
         </script>
     </body>
 </html>

@@ -23,3 +23,4 @@ function manualchang(n) {
 function backtoup(){
     scroll(0,0)
 }
+
