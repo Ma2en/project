@@ -10,7 +10,7 @@ function show(){
         slidecount=1
     }
     slides[slidecount-1].style.display="block";
-    setTimeout(show, 4000)
+    setTimeout(show, 2000)
 }
 function manualchang(n) {
     show(slidecount += n);

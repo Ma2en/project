@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Slide Show</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
@@ -26,7 +27,109 @@
                     <div class="prev-div"><a class="prev" onclick="manualchang(-1)">&#10094;</a></div>
                     <div class="next-div"><a class="next" onclick="manualchang(1)">&#10095;</a></div>
             </div><!--end slider-divs -->
-            <section class="main-divs" style="background-color: aqua"><h1>I am the third div</h1></section>
+            <section class="main-divs">
+                <div class="items">
+                    <div class="item">
+                        <img class="nature" src="images/img1.jpg" width="250px">
+                        <img class="nature" src="images/img2.jpg" width="250px">
+                        <img class="nature" src="images/img3.jpg" width="250px">
+
+                        <h2>Testing W3.JS in HTML</h2>
+
+                        <p>The slideshow is an object, with methods like next/previous:</p>
+
+                        <button onclick="myShow.previous()">Previous</button>
+                        <button onclick="myShow.next()">Next</button>
+                    </div>
+                    <div class="item">
+                        
+                    </div>
+                    <div class="item">
+                            <img class="nature" src="images/img1.jpg" width="250px">
+                            <img class="nature" src="images/img2.jpg" width="250px">
+                            <img class="nature" src="images/img3.jpg" width="250px">
+    
+                            <h2>Testing W3.JS in HTML</h2>
+    
+                            <p>The slideshow is an object, with methods like next/previous:</p>
+    
+                            <button onclick="myShow.previous()">Previous</button>
+                            <button onclick="myShow.next()">Next</button>
+                    </div>
+                    <div class="item">
+                            <img class="nature" src="images/img1.jpg" width="250px">
+                            <img class="nature" src="images/img2.jpg" width="250px">
+                            <img class="nature" src="images/img3.jpg" width="250px">
+    
+                            <h2>Testing W3.JS in HTML</h2>
+    
+                            <p>The slideshow is an object, with methods like next/previous:</p>
+    
+                            <button onclick="myShow.previous()">Previous</button>
+                            <button onclick="myShow.next()">Next</button>
+                    </div>
+                    <div class="item">
+                            <img class="nature" src="images/img1.jpg" width="250px">
+                            <img class="nature" src="images/img2.jpg" width="250px">
+                            <img class="nature" src="images/img3.jpg" width="250px">
+    
+                            <h2>Testing W3.JS in HTML</h2>
+    
+                            <p>The slideshow is an object, with methods like next/previous:</p>
+    
+                            <button onclick="myShow.previous()">Previous</button>
+                            <button onclick="myShow.next()">Next</button>
+                    </div>
+                    <div class="item">
+                            <img class="nature" src="images/img1.jpg" width="250px">
+                            <img class="nature" src="images/img2.jpg" width="250px">
+                            <img class="nature" src="images/img3.jpg" width="250px">
+    
+                            <h2>Testing W3.JS in HTML</h2>
+    
+                            <p>The slideshow is an object, with methods like next/previous:</p>
+    
+                            <button onclick="myShow.previous()">Previous</button>
+                            <button onclick="myShow.next()">Next</button>
+                    </div>
+                    <div class="item">
+                            <img class="nature" src="images/img1.jpg" width="250px">
+                            <img class="nature" src="images/img2.jpg" width="250px">
+                            <img class="nature" src="images/img3.jpg" width="250px">
+    
+                            <h2>Testing W3.JS in HTML</h2>
+    
+                            <p>The slideshow is an object, with methods like next/previous:</p>
+    
+                            <button onclick="myShow.previous()">Previous</button>
+                            <button onclick="myShow.next()">Next</button>
+                    </div>
+                    <div class="item">
+                            <img class="nature" src="images/img1.jpg" width="250px">
+                            <img class="nature" src="images/img2.jpg" width="250px">
+                            <img class="nature" src="images/img3.jpg" width="250px">
+    
+                            <h2>Testing W3.JS in HTML</h2>
+    
+                            <p>The slideshow is an object, with methods like next/previous:</p>
+    
+                            <button onclick="myShow.previous()">Previous</button>
+                            <button onclick="myShow.next()">Next</button>
+                    </div>
+                    <div class="item">
+                            <img class="nature" src="images/img1.jpg" width="250px">
+                            <img class="nature" src="images/img2.jpg" width="250px">
+                            <img class="nature" src="images/img3.jpg" width="250px">
+    
+                            <h2>Testing W3.JS in HTML</h2>
+    
+                            <p>The slideshow is an object, with methods like next/previous:</p>
+    
+                            <button onclick="myShow.previous()">Previous</button>
+                            <button onclick="myShow.next()">Next</button>
+                    </div>
+                </div>
+            </section>
             <section class="main-divs" style="background-color: darkgray"><h1>I am the third div</h1></section>
         </div><!--end main-divs-->
         <div class="footer">
@@ -95,6 +198,8 @@
             slider.scrollLeft = scrollLeft - walk;
             console.log(walk);
             });
+
+            myShow = w3.slideshow(".nature", 0);
         </script>
     </body>
 </html>
