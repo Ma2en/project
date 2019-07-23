@@ -63,47 +63,11 @@ html {
   float: left;
 }
 .main-divs{
+  position: static;
   height: 100%;
   /* this style for rmove the space between divs*/
   display: grid;
 }
-.item {
-  display: inline-block;
-  text-align: center;
-  width: auto;
-  border: black 0.5px solid;
-  box-shadow: 10px 10px 15px grey;
-  height:auto;
-  margin: 2em 1em;
-  margin-top: 15%;
-}
-.nature{
-  margin: 0 auto;
-  border: 2.5 solid black
-}
-.items {
-  text-align: center;
-  position: relative;
-  width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  transition: all 0.2s;
-  transform: scale(0.98);
-  will-change: transform;
-  cursor: pointer;
-}
-.items.active {
-  cursor: grabbing;
-  cursor: -webkit-grabbing;
-  transform: scale(1);
-}
-/*#img-div{
-  background-color: whitesmoke;
-  border: black 0.5px solid;
-  box-shadow: 10px 10px 15px darkgrey;
-  height:auto;
-}*/
 .footer{
   background-color: aqua;
   height: 30%;
@@ -135,7 +99,8 @@ html {
   height: 100%;
   width: 5%;
 }
-.prev-div:hover, .next-div:hover{
+.prev-div:hover,
+.next-div:hover{
   background-color: transparent;
 }
 .prev, .next{
@@ -188,4 +153,33 @@ html {
 }
 .up-button:hover{
   background-color: black;
+}
+.swiper-container {
+  width: 100%;
+  height: 70%;
+  background-color:transparent;
+  margin-top: 10%;
+}
+.swiper-slide {
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  background:whitesmoke;
+  height: auto;
+  margin-top: 100px;
+  /* Center slide text vertically */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.img{
+  margin-top: 15px;
+  margin-left: 15%;
+  width:70%;
+  border: rgb(12, 96, 223) 4 solid;
 }

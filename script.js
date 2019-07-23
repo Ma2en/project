@@ -1,5 +1,10 @@
 var slidecount = 0;
 show();
+
+function manualchang(n) {
+    show(slidecount += n);
+  }
+
 function show(){
     var slides= document.getElementsByClassName("slide");
     for (i=0; i<slides.length; i++){
@@ -12,9 +17,6 @@ function show(){
     slides[slidecount-1].style.display="block";
     setTimeout(show, 2000)
 }
-function manualchang(n) {
-    show(slidecount += n);
-  }
 
   const topbutton= document.getElementsByClassName("up-button");
 
@@ -23,4 +25,3 @@ function manualchang(n) {
 function backtoup(){
     scroll(0,0)
 }
-
