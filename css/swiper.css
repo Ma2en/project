@@ -9,15 +9,15 @@
  *
  * Released on: February 22, 2019
  */
-.swiper-container {
+/*.swiper-container {
   margin: 10% auto;
   position: relative;
   overflow: hidden;
   list-style: none;
   padding: 0;
-  /* Fix of Webkit flickering */
+  /* Fix of Webkit flickering 
   z-index: 1;
-}
+}*/
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
 }
@@ -156,9 +156,9 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 10%;
-  width: 15px;
-  height: 24px;
+  top: 50%;
+  width: 27px;
+  height: 44px;
   margin-top: -22px;
   z-index: 10;
   cursor: pointer;
