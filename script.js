@@ -1,3 +1,4 @@
+//this is for the top slideshow
 var slidecount = 0;
 show();
 
@@ -18,9 +19,10 @@ function show(){
     setTimeout(show, 2000)
 }
 
-  const topbutton= document.getElementsByClassName("up-button");
+//to make button scroll to the top with animation
+const topbutton= document.getElementsByClassName("up-button");
 
-  topbutton.addEventListener("click",backtoup);
+topbutton.addEventListener("click",backtoup);
 
 function backtoup(){
     scroll(0,0)

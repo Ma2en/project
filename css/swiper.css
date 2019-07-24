@@ -156,9 +156,9 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 50%;
-  width: 27px;
-  height: 44px;
+  top: 10%;
+  width: 15px;
+  height: 24px;
   margin-top: -22px;
   z-index: 10;
   cursor: pointer;
