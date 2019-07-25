@@ -12,11 +12,12 @@ html {
 #navbar{
   position: fixed;
   width: 100%;
-  height: 4%;
+  height: auto;
   padding-bottom: 8px;
   display: block;
   transition: top 0.3s;
   background-color:transparent;
+  z-index: 20;
 }
 .link-bar ul{
   list-style-type: none;
@@ -57,7 +58,7 @@ html {
 }
 #nav-img{
   width: 40px;
-  padding-top: 3px;
+  padding-top: 7px;
   display: inline;
   margin-left: 20px;
   float: left;
@@ -68,9 +69,9 @@ html {
   display: grid;
 }
 .footer{
-  background-color: aqua;
-  height: 30%;
+  height: 40%;
   margin: 2px 0 ;
+  background-color: #373737;
 }
 .col-1{
   float: left;
@@ -85,7 +86,15 @@ html {
   margin-top: 10px;
   margin-bottom: 20px;
   margin-left: 10px;
-   text-align: center;
+  text-align: center;
+}
+.footer ul li{
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #8DB9ED;
+}
+h4{
+  text-transform: uppercase;
 }
 .slide{
   width: 100%;
@@ -145,19 +154,22 @@ html {
   right: 10px;
   height: 35px;
   width: 35px;
+  background-color: dimgrey;
   border-radius: 50%;
   border: 0 solid;
   margin-top: 30px;
   margin-left: 8px;
+  z-index: 15;
 }
 .up-button:hover{
   background-color: black;
+  color: beige;
 }
 .swiper-container {
   display: inline-block;
   position: relative;
   width: 100%;
-  height: 70%;
+  height: 90%;
   background-color:transparent;
   margin-top: 10%;
 }
@@ -166,10 +178,10 @@ html {
   position: relative;
   text-align: center;
   font-size: 18px;
-  background:transparent;
+  background:whitesmoke;
   height: auto;
-  margin-top: 100px;
-  box-shadow: darkgray 10px 10px 15px;
+  margin-top: 150px;
+  box-shadow: rgba(104, 84, 84, 0.774) 10px 10px 10px;
   /* Center slide text vertically */
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -185,6 +197,7 @@ html {
   margin-top: 15px;
   margin-left: 5%;
   width:90%;
+  height: 300px;;
 }
 .divs-prev, .divs-next{
   background-color: transparent;
@@ -215,3 +228,53 @@ html {
   background-color: white;
   color: black;
 }
+
+.footer-social-section {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 5px;
+}
+.footer-social-section::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 1px solid #ccc;
+  width: calc(100% - 20px);
+}
+.flex-rw {
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer-social-connect {
+  display: flex;
+  align-items: center;
+  font: 3.5em "Oswald", sans-serif;
+  color: #fff;
+}
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: #373737;
+  padding: 0 20px;
+}
+.footer-social-small {
+  font-size: 0.6em;
+  padding: 0px 20px;
+}
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: #373737;
+  padding: 0 20px;
+}
+.generic-anchor {
+  color: #8DB9ED;
+}
+.generic-anchor:visited {
+  color: #8DB9ED;
+}
+

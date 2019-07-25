@@ -4,8 +4,17 @@
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Slide Show</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/swiper.min.css"> 
+        <link rel="stylesheet" href="css/contactStyle.css">
+        <link rel="stylesheet" href="css/util.css">
+    <!--===============================================================================================-->
+	    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">    
+        <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
         <script src="https://www.w3schools.com/lib/w3.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
@@ -28,7 +37,7 @@
                     <div class="prev-div"><a class="prev" onclick="manualchang(-1)">&#10094;</a></div>
                     <div class="next-div"><a class="next" onclick="manualchang(1)">&#10095;</a></div>
             </div><!--end slider-divs -->
-            <section class="main-divs" style="background-color:transparent; text-align: center">
+            <section class="main-divs" style="background-image: url(images/bg-01.jpg); text-align: center">
                 <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-free-mode">
                     <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
                     <div class="swiper-slide swiper-slide-active" style="width: 539.667px; margin-right: 30px;">
@@ -52,6 +61,7 @@
                         <button class="divs-next" onclick="plusDivs(1, 1)">&#10095;</button>
                         <p>
                                 <h3>Slides Show</h3>
+                                <br>
                                 Students come to Flatiron School to change their lives. <br>
                                 Join our driven community of <br> career-changers and master the
                                 skills you need to become a software engineer or a data scientist.
@@ -65,6 +75,7 @@
                         <button class="divs-next" onclick="plusDivs(1, 2)">&#10095;</button>
                         <p>
                             <h3>Slides Show</h3>
+                            <br>
                             Students come to Flatiron School to change their lives. <br>
                             Join our driven community of <br> career-changers and master the
                             skills you need to become a software engineer or a data scientist.
@@ -78,6 +89,7 @@
                         <button class="divs-next" onclick="plusDivs(1, 9)">&#10095;</button>
                         <p>
                                 <h3>Slides Show</h3>
+                                <br>
                                 Students come to Flatiron School to change their lives. <br>
                                 Join our driven community of <br> career-changers and master the
                                 skills you need to become a software engineer or a data scientist.
@@ -91,6 +103,7 @@
                         <button class="divs-next" onclick="plusDivs(1, 3)">&#10095;</button>
                         <p>
                                 <h3>Slides Show</h3>
+                                <br>
                                 Students come to Flatiron School to change their lives. <br>
                                 Join our driven community of <br> career-changers and master the
                                 skills you need to become a software engineer or a data scientist.
@@ -104,6 +117,7 @@
                         <button class="divs-next" onclick="plusDivs(1, 4)">&#10095;</button>
                         <p>
                                 <h3>Slides Show</h3>
+                                <br>
                                 Students come to Flatiron School to change their lives. <br>
                                 Join our driven community of <br> career-changers and master the
                                 skills you need to become a software engineer or a data scientist.
@@ -117,6 +131,7 @@
                         <button class="divs-next" onclick="plusDivs(1, 5)">&#10095;</button>
                         <p>
                                 <h3>Slides Show</h3>
+                                <br>
                                 Students come to Flatiron School to change their lives. <br>
                                 Join our driven community of <br> career-changers and master the
                                 skills you need to become a software engineer or a data scientist.
@@ -130,6 +145,7 @@
                         <button class="divs-next" onclick="plusDivs(1, 6)">&#10095;</button>
                         <p>
                                 <h3>Slides Show</h3>
+                                <br>
                                 Students come to Flatiron School to change their lives. <br>
                                 Join our driven community of <br> career-changers and master the
                                 skills you need to become a software engineer or a data scientist.
@@ -143,6 +159,7 @@
                         <button class="divs-next" onclick="plusDivs(1, 7)">&#10095;</button>
                         <p>
                                 <h3>Slides Show</h3>
+                                <br>
                                 Students come to Flatiron School to change their lives. <br>
                                 Join our driven community of <br> career-changers and master the
                                 skills you need to become a software engineer or a data scientist.
@@ -156,71 +173,144 @@
                         <button class="divs-next" onclick="plusDivs(1, 8)">&#10095;</button>
                         <p>
                                 <h3>Slides Show</h3>
+                                <br>
                                 Students come to Flatiron School to change their lives. <br>
                                 Join our driven community of <br> career-changers and master the
-                                skills you need to become a software engineer or a data scientist.
+                                skills you need to <br> become a software engineer or a data scientist.
                         </p>
                     </div>
                 </div>
-            </section>  
-            <section class="main-divs" style="background-color: darkgray">
-                <h1>I am the third div</h1>
+            </section>  <!--end divs slider-->
+            <!--start contact-->
+            <section class="main-divs" style="background-image: url(images/bg-01.jpg);">
+                <div class="bg-container-contact100">
+                    <div class="contact100-header flex-sb-m">
+                        <button class="btn-show-contact100">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+                <div class="container-contact100">
+                    <div class="wrap-contact100">
+            
+                        <div class="contact100-form-title" style="background-image: url(images/113535.jpg);">
+                            <span>Contact Us</span>
+                        </div>
+            
+                        <form class="contact100-form validate-form">
+                            <div class="wrap-input100 validate-input">
+                                <input id="name" class="input100" type="text" name="name" placeholder="Full name">
+                                <span class="focus-input100"></span>
+                                <label class="label-input100" for="name">
+                                    <span class="lnr lnr-user m-b-2"></span>
+                                </label>
+                            </div>
+            
+            
+                            <div class="wrap-input100 validate-input">
+                                <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+                                <span class="focus-input100"></span>
+                                <label class="label-input100" for="email">
+                                    <span class="lnr lnr-envelope m-b-5"></span>
+                                </label>
+                            </div>
+            
+            
+                            <div class="wrap-input100 validate-input">
+                                <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+                                <span class="focus-input100"></span>
+                                <label class="label-input100" for="phone">
+                                    <span class="lnr lnr-smartphone m-b-2"></span>
+                                </label>
+                            </div>
+            
+            
+                            <div class="wrap-input100 validate-input">
+                                <textarea id="message" class="input100" name="message" placeholder="Your comments..."></textarea>
+                                <span class="focus-input100"></span>
+                                <label class="label-input100 rs1" for="message">
+                                    <span class="lnr lnr-bubble"></span>
+                                </label>
+                            </div>
+            
+                            <div class="container-contact100-form-btn">
+                                <button class="contact100-form-btn">
+                                    Send Now
+                                </button>
+                            </div>
+                        </form>
+                </div>
             </section>
         </div><!--end main-divs-->
         <div class="footer">
              <div class="col-1">
-                <h4>Contact</h4>
-                <p style="text-align: center">
-                    Students come to Flatiron School to change their lives. <br>
-                    Join our driven community of career-changers and master the
-                    skills you need to become a software engineer or a data scientist.
-                </p>
+                <ul>
+                    <li><h4 style="color: beige;font-family: Montserrat-Bold;">about us</h4></li>
+                    <li>link1</li>
+                    <li>link2</li>
+                    <li>link3</li>
+                    <li>link4</li>
+                </ul>
             </div>
             <div class="col-2">
-                <h4>Follow</h4>
-                <p style="text-align: center">
-                    Students come to Flatiron School to change their lives. <br>
-                    Join our driven community of career-changers and master the
-                    skills you need to become a software engineer or a data scientist.
-                </p>
+                <ul>
+                    <li><h4 style="color: beige;font-family: Montserrat-Bold;">help</h4></li>
+                    <li>link1</li>
+                    <li>link2</li>
+                    <li>link3</li>
+                    <li>link4</li>
+                </ul>
             </div >
             <div class="col-2">
-                <h4>About Us</h4> 
-                <p style="text-align: center">
-                    Students come to Flatiron School to change their lives. <br>
-                    Join our driven community of career-changers and master the
-                    skills you need to become a software engineer or a data scientist.
-                </p> 
+                <ul>
+                    <li><h4 style="color: beige;font-family: Montserrat-Bold;">contact</h4></li>
+                    <li>link1</li>
+                    <li>link2</li>
+                    <li>link3</li>
+                    <li>link4</li>
+                </ul>
             </div>
+        <section class="footer-social-section flex-rw">
+            <span class="footer-social-overlap footer-social-connect">
+                CONNECT <span class="footer-social-small">with</span> US
+            </span>
+            <span class="footer-social-overlap footer-social-icons-wrapper">
+                <a href="#" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><img src="images/facebook.png"></a>
+                <a href="#" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><img src="images/twitter.png"></i></a>
+                <a href="#" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><img src="images/instagram.png"></i></a>
+                <a href="#" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><img src="images/youtube.png"></i></a>
+            </span>
+        </section>
         </div><!--end footer-->
         <button class="up-button" onclick="backtoup()">&#9650;</button>
         <!-- start java-script-->
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
         <script src="js/swiper.min.js"></script>
        
         <script>
             // transparent navbar
-                window.onscroll = function() {scrollFunction()};
+            window.onscroll = function() {scrollFunction()};
             
-                function scrollFunction() {
+            function scrollFunction() {
               if (document.body.scrollTop > 20 ) {
-                document.getElementById("navbar").style.backgroundColor ="#333";
+                document.getElementById("navbar").style.backgroundColor ="darkgrey";
+                document.getElementById("navbar").style.opacity = "0.95"
               }else{
-                    document.getElementById("navbar").style.backgroundColor="transparent";
+                document.getElementById("navbar").style.backgroundColor="transparent";
               }
             }
             
-
+            // make the divs move
             var swiper = new Swiper('.swiper-container', {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                  freeMode: true,
-                  pagination: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    freeMode: true,
+                    pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
-                  },
+                    },
                 });
-
+            // make slideshow in divs
             var slideIndex = [1,1,1,1,1,1,1,1,1,1];
             var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5",
                             "mySlides6", "mySlides7", "mySlides8", "mySlides9", "mySlides10" ]
@@ -256,6 +346,83 @@
             x[slideIndex[no]-1].style.display = "block";  
             }
 
+            //contact
+            (function ($) {
+                "use strict";
+
+                /*==================================================================
+                [ Validate after type ]*/
+                $('.validate-input .input100').each(function(){
+                    $(this).on('blur', function(){
+                        if(validate(this) == false){
+                            showValidate(this);
+                        }
+                        else {
+                            $(this).parent().addClass('true-validate');
+                        }
+                    })    
+                })
+            
+            
+                /*==================================================================
+                [ Validate ]*/
+                var input = $('.validate-input .input100');
+
+                $('.validate-form').on('submit',function(){
+                    var check = true;
+
+                    for(var i=0; i<input.length; i++) {
+                        if(validate(input[i]) == false){
+                            showValidate(input[i]);
+                            check=false;
+                        }
+                    }
+
+                    return check;
+                });
+
+
+                $('.validate-form .input100').each(function(){
+                    $(this).focus(function(){
+                    hideValidate(this);
+                    $(this).parent().removeClass('true-validate');
+                    });
+                });
+
+                function validate (input) {
+                    if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
+                        if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+                            return false;
+                        }
+                    }
+                    else {
+                        if($(input).val().trim() == ''){
+                            return false;
+                        }
+                    }
+                }
+
+                function showValidate(input) {
+                    var thisAlert = $(input).parent();
+
+                    $(thisAlert).addClass('alert-validate');
+
+                    $(thisAlert).append('<span class="btn-hide-validate">&#xf136;</span>')
+                    $('.btn-hide-validate').each(function(){
+                        $(this).on('click',function(){
+                        hideValidate(this);
+                        });
+                    });
+                }
+
+                function hideValidate(input) {
+                    var thisAlert = $(input).parent();
+                    $(thisAlert).removeClass('alert-validate');
+                    $(thisAlert).find('.btn-hide-validate').remove();
+                }
+                
+
+            })(jQuery);
         </script>
     </body>
 </html>
