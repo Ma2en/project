@@ -293,7 +293,7 @@
             
             function scrollFunction() {
               if (document.body.scrollTop > 20 ) {
-                document.getElementById("navbar").style.backgroundColor ="darkgrey";
+                document.getElementById("navbar").style.backgroundColor ="rgb(13, 95, 163)";
                 document.getElementById("navbar").style.opacity = "0.95"
               }else{
                 document.getElementById("navbar").style.backgroundColor="transparent";
@@ -421,6 +421,15 @@
                     $(thisAlert).find('.btn-hide-validate').remove();
                 }
                 
+                /*==================================================================
+                [ Show / hide contact ]*/
+                $('.btn-hide-contact100').on('click', function(){
+                    $('.container-contact100').fadeOut(300);
+                });
+
+                $('.btn-show-contact100').on('click', function(){
+                    $('.container-contact100').fadeIn(300);
+                });
 
             })(jQuery);
         </script>

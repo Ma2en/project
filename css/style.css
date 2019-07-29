@@ -37,7 +37,7 @@ html {
   width: 100%;
   display: block;
   text-align: center;
-  color: #be1414f1;
+  color:lightcyan ;
   font-size: 17px;
   font-weight: bold;
   text-decoration: none;
@@ -47,7 +47,7 @@ html {
   bottom: 0;
   left: 0;
   position: absolute;
-  background-color: red;
+  background-color: whitesmoke;
   height: 3px;
   width: 0%;
   transition: 0.5s all;
@@ -178,6 +178,7 @@ h4{
   position: relative;
   text-align: center;
   font-size: 18px;
+  color: rgb(13, 95, 163);
   background:whitesmoke;
   height: auto;
   margin-top: 150px;
